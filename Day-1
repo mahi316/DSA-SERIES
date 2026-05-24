@@ -1,4 +1,125 @@
-                         CONDITIONAL STATEMENTS AND LOOPS 
+                         CONDITIONAL STATEMENTS 
+
 //IF-ELSE STATEMENTS
 //Program-1 
 //compare number 
+#include <iostream>
+using namespace std;
+int main(){
+   int n;
+   cout<<"Enter your number:";
+   cin>>n;
+   cout<<"\nYour result....\n\n";
+   
+   if(n>=50){
+       cout<<n<<" "<<"Number is greater  ";
+       
+   }
+   else{
+       cout<<n<<" "<<"Number is smaller";
+   }
+   return 0;
+}
+
+//PROGRAM -2
+//grades 
+#include <iostream>
+using namespace std;
+int main(){
+   int n;
+   cout<<"Enter your marks:";
+   cin>>n;
+   cout<<"\nYour result....\n";
+   
+   if(n>=80){
+       cout<<"A+\nPromoted by Good Grades";
+       
+   }
+   else if(n>=70){
+       cout<<"B\npromoted ";
+   } 
+      else if(n>=50) {
+          cout<<"C\npromoted By Grace Marks";
+       
+      }
+      else{
+          cout<<"D\nSUPPLEMENTARY ";
+       
+      }
+   
+   return 0;
+}
+
+//program 3
+//odd even 
+#include <iostream>
+using namespace std;
+int main(){
+   int n;
+   cout<<"Enter your number:";
+   cin>>n;
+   cout<<"\nYour result....\n";
+   
+   if(n%2==0){
+      cout<<n<<" "<<"Is Even Number";
+       
+   }
+   else if(n%2!=0){
+       cout<<n<<" "<<"Is Odd Number";
+   } 
+      
+      else{
+          cout<<"Wrong Input";
+       
+      }
+   
+   return 0;
+}
+                  
+//program 4
+//uppercase or lowercase
+#include <iostream>                                                             
+using namespace std;
+int main(){
+   char ch;
+    cout<<"Enter the character:";
+    cin>>ch;
+    if(ch>=65&& ch<=90){
+        cout<<"UPPERCASE\n";
+    }   
+    else{
+        cout<<"lowercase";
+    }
+    
+
+    return 0;
+    }
+                            OR
+
+#include <iostream>
+using namespace std;
+int main(){
+   char ch;
+    cout<<"Enter the character:";
+    cin>>ch;
+    if(ch>='A'&& ch<='Z'){
+        cout<<"UPPERCASE\n";
+    }   
+    else{
+        cout<<"lowercase";
+    }
+    
+
+    return 0;
+    }
+
+//PROGRAM-5
+//Ternary Operator
+#include <iostream>
+using namespace std;
+int main(){
+   int n=-78;
+      cout<<(n>=0?"Positive":"Negative")<<endl;
+   return 0;
+}
+
